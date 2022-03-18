@@ -1,0 +1,48 @@
+.wrapper {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #e5e5e5;
+}
+li {
+  color: #c4c4c4;
+  list-style: none;
+}
+.nav {
+  background: #f7f6ff;
+  offset: 0px, 4px rgba(0, 0, 0, 0.25);
+  width: 100px;
+  transition: width 200ms ease-in-out;
+}
+.nav:hover {
+  width: 206px;
+}
+.nav:hover .logo-line {
+  width: 128.22px;
+  height: 2px;
+}
+
+.icon:hover {
+  color: #02577a;
+  background-color: #ffffff;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 170px;
+  height: 57px;
+}
+
+p {
+  display: none;
+}
+.nav:hover p {
+  display: block;
+}
+.logo-line {
+  width: 62.24px;
+  align-self: center;
+}
+.content {
+  filter: drop-shadow(4px rgba(0, 0, 0, 0.25));
+}

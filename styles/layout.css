@@ -1,0 +1,70 @@
+* {
+  margin: 0rem;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 1340px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  height: 906px;
+  left: 0;
+  justify-items: center;
+  text-align: center;
+  top: calc(50% - 960px / 2);
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.logo {
+  margin: 52px 16px 0px 16px;
+}
+.icon {
+  display: grid;
+  grid-template-columns: 25px 62px;
+  align-items: center;
+  column-gap: 27px;
+  width: 89px;
+  height: 57px;
+}
+.icon.home {
+  margin: 0px 43px 0 32px;
+}
+.icon.calendar {
+  margin: 0px 38px 0 37px;
+}
+.icon.fe {
+  margin: 0px 38px 0 37px;
+}
+.icon.games {
+  margin: 0px 30px 0px 30px;
+}
+.main {
+  display: grid;
+  grid-template-rows: 871px 35px;
+}
+.footer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  bottom: 0;
+  position: sticky;
+}
+
+.footer-line {
+  width: 346.01px;
+  line-height: 13px;
+}
+.footer-img {
+  width: 184px;
+  height: 11px;
+  text-align: center;
+  line-height: 13px;
+}
