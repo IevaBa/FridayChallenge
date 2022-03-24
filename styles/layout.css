@@ -2,11 +2,16 @@
   margin: 0rem;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat";
 }
 .wrapper {
   display: grid;
   grid-template-columns: 100px 1340px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: var(--main-color);
 }
 .nav {
   display: flex;
@@ -15,7 +20,21 @@
   left: 0;
   justify-items: center;
   text-align: center;
-  top: calc(50% - 960px / 2);
+  background-color: var(--nav-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100px;
+  transition: width 400ms ease-in-out;
+}
+.nav:hover {
+  width: 206px;
+}
+.nav:hover p {
+  display: block;
+}
+p {
+  display: none;
+  color: var(--grey-color);
+  text-align: left;
 }
 .sidebar {
   display: flex;
@@ -24,47 +43,60 @@
   justify-items: center;
 }
 .logo {
-  margin: 52px 16px 0px 16px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 52px;
+}
+nav > hr {
+  width: 62px;
+  height: 2px;
+  border: none;
+  border-bottom: 2px solid var(--grey-color);
+  align-self: center;
+  padding-bottom: 32px;
+  transition: width 0.4s ease-in 0s;
+}
+.nav:hover hr {
+  width: 128px;
 }
 .icon {
   display: grid;
-  grid-template-columns: 25px 62px;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
-  column-gap: 27px;
-  width: 89px;
+  min-width: 89px;
+  width: 206px;
   height: 57px;
+  padding-left: 30px;
+  border-radius: 25px 0 0 25px;
+}
+.icon:hover {
+  background-color: var(--white-color);
 }
 .icon.home {
-  margin: 0px 43px 0 32px;
+  margin: 0px 38px 0 0px;
 }
 .icon.calendar {
-  margin: 0px 38px 0 37px;
+  margin: 0px 38px 0 0px;
 }
 .icon.fe {
-  margin: 0px 38px 0 37px;
+  margin: 0px 38px 0 0px;
 }
 .icon.games {
-  margin: 0px 30px 0px 30px;
+  margin: 0px 30px 0px 0px;
 }
 .main {
   display: grid;
   grid-template-rows: 871px 35px;
 }
 .footer {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  bottom: 0;
-  position: sticky;
-}
-
-.footer-line {
-  width: 346.01px;
-  line-height: 13px;
-}
-.footer-img {
-  width: 184px;
-  height: 11px;
+  position: absolute;
   text-align: center;
-  line-height: 13px;
+  bottom: 0;
+  width: 346px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: var(--secondary-color);
+  border-top: 1px solid var(--secondary-color);
+  padding: 11px 0;
 }
