@@ -41,12 +41,31 @@
           </div>
         </div>
       </nav>
+      <main class="main">
+        <div class="row1">
+          <div class="col1">
+            <h2>
+              Good morning, <br />
+              Ieva
+            </h2>
+          </div>
+          <div class="col2"><div id="today"></div></div>
+        </div>
+        <div class="row2"></div>
+        <div class="row3">
+          <span class="qoute"
+            ><q>First, solve the problem. Then, write the code.</q> - John
+            Johnson</span
+          >
+        </div>
+      </main>
     </div>
-    <main class="main">
-      <div class="content"></div>
-    </main>
     <footer class="footer">
-      <span>&copy; Baltic Institute of Technology </span>
+      <div class="copyright">&copy; Baltic Institute of Technology</div>
     </footer>
+    <script>
+      const today = new Date();
+      document.getElementById("today").innerHTML = today.toDateString();
+    </script>
   </body>
 </html>
