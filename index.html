@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BIT</title>
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <style>
@@ -12,60 +13,62 @@
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <nav class="nav">
-        <img
-          class="logo"
-          style="width: 68px; height: 34px"
-          src="assets/logo.svg"
-          alt="BIT
+    <nav class="nav">
+      <img
+        class="logo"
+        style="width: 68px; height: 34px"
+        src="assets/logo.svg"
+        alt="BIT
           logo"
-        />
-        <hr />
-        <div class="sidebar">
-          <div class="icon home" href="home.html">
-            <img src="assets/home.svg" alt="home icon" />
-            <p>Home</p>
-          </div>
-          <div class="icon calendar" href="calendar.html">
-            <img src="assets/calendar.svg" alt="calendar icon" />
-            <p>Calendar</p>
-          </div>
-          <div class="icon fe" href="fe.html">
-            <img src="assets/fe.svg" alt="fe icon" />
-            <p>FE</p>
-          </div>
-          <div class="icon games" href="games.html">
-            <img src="assets/games.svg" alt="games icon" />
-            <p>Games</p>
-          </div>
+      />
+      <hr />
+      <div class="sidebar">
+        <div class="icon home">
+          <img src="assets/home.svg" alt="home icon" />
+          <a href="index.html"> <p> Home</p></a>
         </div>
-      </nav>
-      <main class="main">
-        <div class="row1">
-          <div class="col1">
-            <h2>
-              Good morning, <br />
-              Ieva
-            </h2>
-          </div>
-          <div class="col2"><div id="today"></div></div>
+        <div class="icon calendar" >
+          <img src="assets/calendar.svg" alt="calendar icon" />
+          <a href="calendar.html"><p>Calendar</p></a>
         </div>
-        <div class="row2"></div>
-        <div class="row3">
-          <span class="qoute"
-            ><q>First, solve the problem. Then, write the code.</q> - John
-            Johnson</span
-          >
+        <div class="icon fe">
+          <img src="assets/fe.svg" alt="fe icon" />
+          <a href="fe.html"><p>FE</p></a>
         </div>
+        <div class="icon games">
+          <img src="assets/games.svg" alt="games icon" />
+          <a href="games.html"><p>Games</p></a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <h2 class="greeting">
+      Good morning, <br />
+      Ieva
+      </h2> 
+      <div class="container"><div class="time" id="time"></div>
+    <div class = "date" id="date"></div></div>
+      </div>
       </main>
-    </div>
+      <section class="home-img"></section>
+      <section>
+      <div class="qoute">
+      "First, solve the problem. Then, write the code." - John
+      Johnson</div>
+      </section>
     <footer class="footer">
       <div class="copyright">&copy; Baltic Institute of Technology</div>
     </footer>
     <script>
-      const today = new Date();
-      document.getElementById("today").innerHTML = today.toDateString();
+        const d = new Date();
+        const days = ["Sekmadienis","Pirmadienis","Antradienis","Trečiadienis","Ketvirtadienis","Penktadienis","Šeštadienis"];
+        const months = ["Sausio", "Vasario", "Kovo", "Balandžio", "Gegužės", "Birželio", "Liepos", "Rugpjūčio", "Rugsėjo", "Spalio", "Lapkričio", "Gruodžio"];
+        let hour = d.getHours();
+        let minute = d.getMinutes();
+        let day = days[d.getDay()];
+        let month = months[d.getMonth()];
+        document.getElementById("time").innerHTML = hour + ":" + minute;
+        document.getElementById("date").innerHTML = day + ", " + month + " " + d.getDate() + ", " + d.getFullYear();
     </script>
   </body>
 </html>

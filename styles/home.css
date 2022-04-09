@@ -1,0 +1,91 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 56px auto 30px;
+  width: 90%;
+  max-width: 1267px;
+  font-weight: 500;
+  font-size: 36px;
+}
+main .greeting {
+  margin: 0;
+  font-weight: 500;
+  font-size: 36px;
+  max-width: 341px;
+  margin-left: 106px;
+}
+main .greeting {
+  margin: 0;
+  font-weight: 500;
+  font-size: 36px;
+  max-width: 341px;
+  margin-left: 106px;
+}
+main .container {
+  padding: 22px 96px;
+  background-color: var(--white-color);
+  border-radius: 25px;
+}
+main .container .time {
+  display: block;
+  color: var(--secondary-color);
+  font-size: 36px;
+  margin-bottom: 7px;
+}
+main .container .date {
+  font-size: 24px;
+}
+.home-img {
+  background: linear-gradient(
+      0deg,
+      rgba(237, 236, 243, 0.46),
+      rgba(237, 236, 243, 0.46)
+    ),
+    url("../assets/workplace.png");
+  background-repeat: no-repeat;
+  height: 431px;
+  background-size: cover;
+  background-position: center;
+}
+.qoute {
+  padding: 49px 0;
+  width: 80%;
+  max-width: 898px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 25px;
+  text-align: center;
+  margin: 43px auto;
+}
+section {
+  font-weight: 500;
+  margin-left: 100px;
+}
+@media only screen and (max-width: 1080px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-left: 125px;
+    width: auto;
+  }
+  main .container {
+    padding: 22px 20px;
+  }
+  main .greeting {
+    margin: 33px 0 0 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .quote {
+    padding: 40px 64px;
+    max-width: 433px;
+    width: auto;
+    margin-left: 106px;
+  }
+  footer {
+    left: calc(50% + 50px);
+  }
+  .home-img {
+    height: 476px;
+  }
+}
