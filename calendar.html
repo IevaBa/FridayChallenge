@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles/calendar.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <script
+      src="https://kit.fontawesome.com/e5bf87c84a.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <img
+        class="logo"
+        style="width: 68px; height: 34px"
+        src="assets/logo.svg"
+        alt="BIT
+          logo"
+      />
+      <hr />
+      <div class="sidebar">
+        <div class="icon home">
+          <img src="assets/home.svg" alt="home icon" />
+          <a href="index.html"> <p>Home</p></a>
+        </div>
+        <div class="icon calendar">
+          <img src="assets/calendar.svg" alt="calendar icon" />
+          <a href="calendar.html active"><p>Calendar</p></a>
+        </div>
+        <div class="icon fe">
+          <img src="assets/fe.svg" alt="fe icon" />
+          <a href="fe.html"><p>FE</p></a>
+        </div>
+        <div class="icon games">
+          <img src="assets/games.svg" alt="games icon" />
+          <a href="games.html"><p>Games</p></a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="workshops">
+        <div class="lesson scss">
+          <div class="left">
+            <h2>SCSS</h2>
+            <p>Try mixin</p>
+            <div class="color scss"></div>
+          </div>
+          <div class="right">
+            <div class="points">...</div>
+          </div>
+        </div>
+        <div class="lesson react">
+          <div class="left">
+            <h2>React</h2>
+            <p>Lift state up</p>
+            <div class="color react"></div>
+          </div>
+          <div class="right"><div class="points">...</div></div>
+        </div>
+        <div class="lesson php">
+          <div class="left">
+            <h2>PHP</h2>
+            <p>Use isset()</p>
+            <div class="color php"></div>
+          </div>
+          <div class="right"><div class="points">...</div></div>
+        </div>
+      </div>
+      <div class="calendar_main">
+        <div class="month">
+          <i class="fa-solid fa-arrow-left-long"></i>
+          <h2>January</h2>
+          <i class="fa-solid fa-arrow-right-long next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+          <div>Sun</div>
+        </div>
+        <div class="days">
+          <div class="prev-date">27</div>
+          <div class="prev-date">28</div>
+          <div class="prev-date">29</div>
+          <div class="prev-date">30</div>
+          <div class="prev-date">31</div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+          <div>13</div>
+          <div class="today"><p>14</p></div>
+          <div>15</div>
+          <div>16</div>
+          <div>17</div>
+          <div>18</div>
+          <div>19</div>
+          <div>20</div>
+          <div>21</div>
+          <div>22</div>
+          <div>23</div>
+          <div>24</div>
+          <div>25</div>
+          <div>26</div>
+          <div>27</div>
+          <div>28</div>
+          <div>29</div>
+          <div>30</div>
+          <div>31</div>
+          <div class="next-date">1</div>
+          <div class="next-date">2</div>
+          <div class="next-date">3</div>
+          <div class="next-date">4</div>
+          <div class="next-date">5</div>
+          <div class="next-date">6</div>
+        </div>
+      </div>
+      <div class="more"><div>+</div></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="copyright">&copy; Baltic Institute of Technology</div>
+    </footer>
+  </body>
+</html>
